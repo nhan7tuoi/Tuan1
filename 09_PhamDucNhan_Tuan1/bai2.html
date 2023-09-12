@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 2</title>
+</head>
+<body>
+    <script>
+        function bmi(weight, height){
+            return (weight/(height*height)).toFixed(1);
+        }
+        function check(a,b){
+            if(a>b){
+                return true;
+            }else {
+                return false;
+            }
+        }
+        function check2(x){
+            if(x){
+                console.log("Mark's BMI is higher than John's");
+            }else{
+                console.log("John's BMI is higher than Mark's");
+            }
+        }
+        function check3(a,b){
+            if(a>b){
+                console.log("Mark BMI("+a+") is higher than John BMI("+b+")");
+            }else if(a<b){
+                console.log("John BMI("+b+") is higher than Mark BMI("+a+")");
+            }else{
+                console.log("Mark BMI("+a+") is equal to John BMI("+b+")");
+            }
+        }
+        //test1
+        console.log("Data 1");
+        var weightM = 78;
+        var heightM = 1.69;
+        var weightJ = 92;
+        var heightJ = 1.95;
+        var bmiM = bmi(weightM,heightM);
+        var bmiJ = bmi(weightJ,heightJ);
+        console.log(bmiM,bmiJ);
+        var markHigherBMI = check(bmiM,bmiJ);
+        check2(markHigherBMI);
+        check3(bmiM,bmiJ);
+
+        //test2
+        console.log("Data 2");
+        var weightM = 95;
+        var heightM = 1.88;
+        var weightJ = 85;
+        var heightJ = 1.76;
+        var bmiM = bmi(weightM,heightM);
+        var bmiJ = bmi(weightJ,heightJ);
+        console.log(bmiM,bmiJ);
+        var markHigherBMI = check(bmiM,bmiJ);
+        console.log(markHigherBMI);
+        check2(markHigherBMI);
+        check3(bmiM,bmiJ);
+    </script>
+</body>
+</html>

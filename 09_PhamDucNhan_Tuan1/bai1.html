@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 1</title>
+</head>
+<body>
+    <script>
+        function bmi(weight, height){
+            return (weight/(height*height)).toFixed(1);
+        }
+        function check(a,b){
+            if(a>b){
+                return true;
+            }else {
+                return false;
+            }
+        }
+        //test1
+        console.log("Data 1");
+        var weightM = 78;
+        var heightM = 1.69;
+        var weightJ = 92;
+        var heightJ = 1.95;
+        var bmiM = bmi(weightM,heightM);
+        var bmiJ = bmi(weightJ,heightJ);
+        console.log(bmiM,bmiJ);
+        var markHigherBMI = check(bmiM,bmiJ);
+        console.log(markHigherBMI);
+        //test2
+        console.log("Data 2");
+        var weightM = 95;
+        var heightM = 1.88;
+        var weightJ = 85;
+        var heightJ = 1.76;
+        var bmiM = bmi(weightM,heightM);
+        var bmiJ = bmi(weightJ,heightJ);
+        console.log(bmiM,bmiJ);
+        var markHigherBMI = check(bmiM,bmiJ);
+        console.log(markHigherBMI);
+
+
+
+    </script>
+</body>
+</html>

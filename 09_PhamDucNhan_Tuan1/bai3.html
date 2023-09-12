@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 3</title>
+</head>
+<body>
+    <script>
+   function average(a,b,c){
+       return ((a+b+c)/3).toFixed(1);
+   }
+
+    function check(a,b){
+        if(a>100 && b>100){
+            if(a>b){
+                console.log("Dolphins win");
+            }
+            else if(a<b){
+                console.log("Koalas win");
+            }
+            else{
+                console.log("Draw");
+            }
+        }else if(a>100 && b<100){
+            console.log("Dolphins win");
+        }else if(a<100 && b>100){
+            console.log("Koalas win");
+        }
+        else{
+            console.log("No team wins");
+        }
+    }
+    //test1
+    console.log("Data 1");
+    var test1 = average(96,108,89);
+    var test2 = average(88,91,110);
+    console.log(test1,test2);
+    check(test1,test2);
+    //test2
+    console.log("Data 2");
+    var test1 = average(97,112,101);
+    var test2 = average(109,95,123);
+    console.log(test1,test2);
+    check(test1,test2);
+    //test3
+    console.log("Data 3");
+    var test1 = average(97,112,101);
+    var test2 = average(109,95,106);
+    console.log(test1,test2);
+    check(test1,test2);
+    </script>
+</body>
+</html>
